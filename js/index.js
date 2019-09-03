@@ -81,3 +81,21 @@ const opacityEffect = document.querySelector("h1");
 document.addEventListener('scroll', e => {
     opacityEffect.textContent = "We are scrolling down";
 })
+
+// select
+
+// const selectAll = document.querySelector("p");
+// // console.log(selectAll);
+
+// document.addEventListener('select', e => {
+//     console.log(e);
+// })
+
+// dblclick --> when double click on nav elements background goes red
+
+const selectedNav = document.querySelectorAll(".nav-link");
+selectedNav.forEach(item => {
+    item.addEventListener('dblclick', e => {
+        e.target.style.background = "red";
+    })
+})

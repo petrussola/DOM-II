@@ -36,3 +36,14 @@ window.addEventListener('wheel', e => {
 function random(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
+
+// when a photo is dragged, text and color of first h2 changes
+
+const drag = document.querySelectorAll("img");
+const dragText = document.querySelector("h2")
+drag.forEach( item => {
+    item.addEventListener('drag', e => {
+        dragText.textContent = "Where are you bringing my friend the img tag??"
+        dragText.style.color = "red";
+    });
+});

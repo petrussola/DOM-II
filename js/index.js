@@ -25,3 +25,14 @@ function prize() {
     }
 }
 
+// when you wheel the mouse wheel the title changes color
+
+const colors = ["red", "yellow", "green", "brown", "purple"]
+
+window.addEventListener('wheel', e => {
+    title.style.color = colors[random(colors.length)];
+});
+
+function random(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}

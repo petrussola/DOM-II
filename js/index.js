@@ -55,3 +55,22 @@ const body = document.querySelector("body");
 window.addEventListener('load', e => {
     body.style.background = colors[random(colors.length)];
 });
+
+// focus
+
+// const focus = document.querySelectorAll('p');
+
+// focus.forEach(item => {
+//     item.addEventListener('focus', e => {
+//         console.log(item);
+//     });
+// })
+
+// increase font of p when resizing window
+
+const resize = document.querySelectorAll("p");
+resize.forEach(item => {
+    window.addEventListener('resize', e => {
+            item.style.fontSize = "3rem";
+        });
+})

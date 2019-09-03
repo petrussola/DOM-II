@@ -74,3 +74,10 @@ resize.forEach(item => {
             item.style.fontSize = "3rem";
         });
 })
+
+// change title when scrolling website
+
+const opacityEffect = document.querySelector("h1");
+document.addEventListener('scroll', e => {
+    opacityEffect.textContent = "We are scrolling down";
+})

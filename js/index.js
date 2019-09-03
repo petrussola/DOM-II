@@ -47,3 +47,11 @@ drag.forEach( item => {
         dragText.style.color = "red";
     });
 });
+
+// load event --> random color upon load of window
+
+const body = document.querySelector("body");
+
+window.addEventListener('load', e => {
+    body.style.background = colors[random(colors.length)];
+});
